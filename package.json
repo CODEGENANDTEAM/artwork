@@ -43,12 +43,15 @@
     "validator": "^13.12.0"
   },
   "scripts": {
+    
     "dev": "concurrently \"node server/index.js\" \"react-scripts start\"",
     "start": "concurrently \"node server/index.js\" \"react-scripts start\"",
     "build": "concurrently \"node server/index.js\" \"react-scripts build\"",
     "prepare": "npm run build",
     "test": "concurrently \"node server/index.js\" \"react-scripts test\"",
     "eject": "concurrently \"node server/index.js\" \"react-scripts eject\""
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
