@@ -49,7 +49,7 @@
     "build": "concurrently \"node server/index.js\" \"react-scripts build\"",
     "prepare": "npm run build",
     "test": "concurrently \"node server/index.js\" \"react-scripts test\"",
-    "eject": "concurrently \"node server/index.js\" \"react-scripts eject\""
+    "eject": "concurrently \"node server/index.js\" \"react-scripts eject\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
